@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/david/code/digerian/genre_classification/starter/mlruns/0/b92bc19164e0467489b59821d7bb9525/artifacts
+end_time: 1650655795268
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: b92bc19164e0467489b59821d7bb9525
+run_uuid: b92bc19164e0467489b59821d7bb9525
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1650655779497
+status: 3
+tags: []
+user_id: david

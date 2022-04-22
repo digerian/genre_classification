@@ -1,0 +1,35 @@
+2022-04-22 14:38:10,307 Downloading and reading test artifact
+wandb: ERROR Project dvdata/exercise_14 does not contain artifact: "data_test.cs:latest"
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/apis/public.py", line 520, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/apis/public.py", line 2583, in __init__
+    self._load()
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/apis/public.py", line 3097, in _load
+    raise ValueError(
+ValueError: Project dvdata/exercise_14 does not contain artifact: "data_test.cs:latest"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 83, in <module>
+    go(args)
+  File "run.py", line 20, in go
+    test_data_path = run.use_artifact(args.test_data).file()
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1957, in use_artifact
+    artifact = public_api.artifact(type=type, name=name)
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    six.reraise(CommError, CommError(message, err), sys.exc_info()[2])
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/apis/normalize.py", line 24, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/apis/public.py", line 520, in artifact
+    artifact = Artifact(self.client, entity, project, artifact_name)
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/apis/public.py", line 2583, in __init__
+    self._load()
+  File "/usr/local/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/lib/python3.8/site-packages/wandb/apis/public.py", line 3097, in _load
+    raise ValueError(
+wandb.errors.error.CommError: Project dvdata/exercise_14 does not contain artifact: "data_test.cs:latest"

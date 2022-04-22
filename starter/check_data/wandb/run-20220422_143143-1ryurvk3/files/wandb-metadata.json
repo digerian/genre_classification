@@ -1,0 +1,31 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-04-22T19:31:45.112369",
+    "startedAt": "2022-04-22T19:31:43.705176",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "-s",
+        "-vv",
+        ".",
+        "--reference_artifact",
+        "exercise_14/preprocessed_data.csv:latest",
+        "--sample_artifact",
+        "preprocessed_data.csv:latest",
+        "--ks_alpha",
+        "0.05"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/digerian/genre_classification.git",
+        "commit": "20d3434b0c4f500757c85e1d025670df9141edc5"
+    },
+    "email": "digerian@protonmail.com",
+    "root": "/Users/david/code/digerian/genre_classification",
+    "host": "Davids-MacBook-Pro.local",
+    "username": "david",
+    "executable": "/usr/local/anaconda3/envs/mlflow-fa2706022408a12f2dfbe8c10a377c66d9be2df7/bin/python"
+}
